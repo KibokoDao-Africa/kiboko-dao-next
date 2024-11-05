@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# KibokoDAO - Decentralized Collaboration for Africa’s Blockchain Ecosystem
 
-First, run the development server:
+---
+[![kibokohome.png](https://i.postimg.cc/9fdgnj6g/kibokohome.png)](https://postimg.cc/8FCb7xPL)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Overview
+KibokoDAO is a decentralized autonomous organization (DAO) focused on empowering Africa’s blockchain community by providing a collaborative platform that enhances education, financial inclusion, and decentralized innovation. Inspired by the Swahili term "Kiboko" (meaning hippopotamus) symbolizing strength and community, KibokoDAO aims to bridge gaps in education, access, and resources across the continent.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Milestone 1: Decentralized Governance System
+- **Objective**: Establish a community-driven governance model using the native token, KDT.
+- **Features**:
+  - On-chain voting for KDT holders.
+  - Proposal submissions and decision-making processes.
+  - Governance mechanisms including quorum requirements and proposal thresholds.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Milestone 1: Tokenomics and Staking Mechanism
+- **Objective**: Launch the KDT token on the Lisk blockchain to incentivize participation.
+- **Features**:
+  - KDT as an ERC-20 compatible token enabling staking and rewards.
+  - Smart contract for managing token distribution and governance rights.
 
-## Learn More
+### Milestone 2: Developer Collaboration and Proposal Platform
+- **Objective**: Facilitate community-driven collaboration through an on-chain platform.
+- **Features**:
+  - Proposal submissions, voting, and funding mechanisms through smart contracts.
+  - Front-end interface for community engagement.
 
-To learn more about Next.js, take a look at the following resources:
+### Milestone 3: DeFi Services for Financial Inclusion
+- **Objective**: Provide accessible financial services to KibokoDAO members.
+- **Features**:
+  - Basic DeFi functionalities, including staking, lending pools, and savings protocols.
+  - User-friendly interface for engaging with financial products.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technical Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Blockchain**: Lisk (EVM-compatible smart contracts)
+- **Token Standard**: ERC-20 for KDT
+- **Governance**: Smart contract-driven governance model
+- **Development Tools**: Lisk SDK, Lisk Wallet, IPFS, Node.js, React
+- **Security**: Regular smart contract audits and bug bounty programs
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+KibokoDAO aims to foster a decentralized, self-sustaining ecosystem that supports Africa’s blockchain innovation, providing tools, resources, and financial inclusion for all community members.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
