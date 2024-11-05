@@ -45,4 +45,4 @@ KibokoDAO is a decentralized autonomous organization (DAO) focused on empowering
 ---
 
 KibokoDAO aims to foster a decentralized, self-sustaining ecosystem that supports Africa’s blockchain innovation, providing tools, resources, and financial inclusion for all community members.
-```
+
