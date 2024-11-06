@@ -1,29 +1,6 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+// layout.tsx
 import "./globals.css";
-import Navbar from "./components/Navbar"; // Importing Navbar component
-
-// Setting up custom fonts
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-// Updated metadata for better SEO
-export const metadata: Metadata = {
-  title: "KibokoDAO Hub",
-  description:
-    "KibokoDAO is a decentralized autonomous organization aimed at empowering Africa’s blockchain community by providing a collaborative platform that enhances education, financial inclusion, and decentralized innovation.",
-  icons: {
-    icon: "https://i.postimg.cc/gXSRXWD8/kibokodaologo.png", 
-    },
-};
+import Navbar from "./components/Navbar";
 
 export default function RootLayout({
   children,
@@ -33,27 +10,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preloading Google Font */}
         <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap"
-          as="style"
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         />
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap"
-          />
-        </noscript>
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* Navbar for consistent navigation across pages */}
-        <Navbar />
-        
-        {/* Main content */}
-        <main>{children}</main>
+        <link
+          rel="stylesheet"
+          href="https://r.mobirisesite.com/862220/assets/web/assets/mobirise-icons2/mobirise2.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://r.mobirisesite.com/862220/assets/dropdown/css/style.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://r.mobirisesite.com/862220/assets/socicon/css/styles.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://r.mobirisesite.com/862220/assets/parallax/jarallax.css"
+        />
 
-       
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+      </head>
+      <body>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
